@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: prometheus-perf-monitoring
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/rh-ee-sira-tenant/perf-monitoring/prometheus-perf-monitoring@sha256:11b58f6225b01d7b1274b193002c76d73a4df8e9af07d019a9bbd73b4f56357d
+        name: perf-prometheus
+        resources: {}
+status: {}
